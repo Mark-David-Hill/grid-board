@@ -374,3 +374,21 @@ export function clearHighlights(gridData, pathCellClass = "path-cell") {
 
   return newGrid;
 }
+
+export function generateRandomCoordinates(count, maxRow, maxCol) {
+  const coordinates = [];
+  const usedPositions = new Set();
+
+  while (coordinates.length < count) {
+    const row = Math.floor(Math.random() * maxRow);
+    const col = Math.floor(Math.random() * maxCol);
+    const position = `${row},${col}`;
+
+    if (!usedPositions.has(position)) {
+      usedPositions.add(position);
+      coordinates.push([row, col]);
+    }
+  }
+
+  return coordinates;
+}
