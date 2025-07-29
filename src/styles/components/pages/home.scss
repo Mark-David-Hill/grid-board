@@ -5,6 +5,23 @@
   width: 100vw;
   margin: 100px 0px;
 
+  .home-layout {
+    display: flex;
+    width: 100%;
+    // height: calc(100vh - 200px);
+    min-height: 600px;
+  }
+
+  .game-board-wrapper {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
   .hero-section {
     @include flex-col-center;
     justify-content: center;
@@ -43,8 +60,24 @@
   }
 }
 
+// Dark mode support for game board wrapper
+.dark-mode .home-container .game-board-wrapper {
+  background-color: #2d3748;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
 @media screen and (max-width: 700px) {
   .home-container {
+    .home-layout {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .game-board-wrapper {
+      margin: 20px 0;
+      min-height: 400px;
+    }
+
     .hero-section {
       margin-top: 11vw;
 
