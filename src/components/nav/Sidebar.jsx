@@ -3,6 +3,7 @@ import "../../styles/components/sidebar.scss";
 
 const Sidebar = ({ activeBoard, onBoardChange }) => {
   const boardOptions = [
+    { id: "tetris", name: "Tetris", component: "TetrisBoard" },
     { id: "ticTacToe", name: "Tic Tac Toe", component: "TicTacToeBoard" },
     { id: "topDown", name: "Top Down", component: "TopDownBoard" },
     { id: "snake", name: "Snake", component: "SnakeBoard" },

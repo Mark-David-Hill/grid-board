@@ -6,9 +6,10 @@ import TopDownBoard from "../grid-board/TopDownBoard";
 import SnakeBoard from "../grid-board/SnakeBoard";
 import TicTacToeBoard from "../grid-board/TicTacToeBoard";
 import CheckersBoard from "../grid-board/CheckersBoard";
+import TetrisBoard from "../grid-board/TetrisBoard";
 
 export default function Home() {
-  const [activeBoard, setActiveBoard] = useState("lightsOut");
+  const [activeBoard, setActiveBoard] = useState("tetris");
 
   const renderActiveBoard = () => {
     switch (activeBoard) {
@@ -24,6 +25,8 @@ export default function Home() {
         return <LightsOutBoard />;
       case "checkers":
         return <CheckersBoard />;
+      case "tetris":
+        return <TetrisBoard />;
       default:
         return <LightsOutBoard />;
     }
