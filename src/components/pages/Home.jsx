@@ -6,6 +6,7 @@ import TopDownBoard from "../grid-board/TopDownBoard";
 import SnakeBoard from "../grid-board/SnakeBoard";
 import TicTacToeBoard from "../grid-board/TicTacToeBoard";
 import CheckersBoard from "../grid-board/CheckersBoard";
+import TetrisBoard from "../grid-board/TetrisBoard";
 
 export default function Home() {
   const [activeBoard, setActiveBoard] = useState("lightsOut");
@@ -18,6 +19,8 @@ export default function Home() {
         return <TopDownBoard />;
       case "snake":
         return <SnakeBoard />;
+      case "tetris":
+        return <TetrisBoard />;
       case "navigation":
         return <NavigationBoard />;
       case "lightsOut":

@@ -6,6 +6,7 @@ const Sidebar = ({ activeBoard, onBoardChange }) => {
     { id: "ticTacToe", name: "Tic Tac Toe", component: "TicTacToeBoard" },
     { id: "topDown", name: "Top Down", component: "TopDownBoard" },
     { id: "snake", name: "Snake", component: "SnakeBoard" },
+    { id: "tetris", name: "Tetris", component: "TetrisBoard" },
     { id: "navigation", name: "Navigation", component: "NavigationBoard" },
     { id: "lightsOut", name: "Lights Out", component: "LightsOutBoard" },
     { id: "checkers", name: "Checkers", component: "CheckersBoard" },
