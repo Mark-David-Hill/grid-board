@@ -413,3 +413,78 @@ body {
 .obstacle-cell {
   background-color: #8b4513; /* Brown for obstacles */
 }
+
+// Tetris specific styles
+.tetris-cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin: 0;
+  border-radius: 2px;
+  box-shadow: none;
+  transition: all 0.1s ease;
+}
+
+.tetris-cell.empty {
+  background-color: #000;
+  border-color: #222;
+}
+
+.tetris-cell.placed {
+  box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tetris-cell.falling {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  animation: pulse 0.5s ease-in-out infinite alternate;
+}
+
+// Tetris piece colors
+.tetris-cyan {
+  background-color: #00ffff;
+  color: #000;
+}
+
+.tetris-yellow {
+  background-color: #ffff00;
+  color: #000;
+}
+
+.tetris-purple {
+  background-color: #800080;
+  color: #fff;
+}
+
+.tetris-green {
+  background-color: #00ff00;
+  color: #000;
+}
+
+.tetris-red {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.tetris-blue {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+.tetris-orange {
+  background-color: #ffa500;
+  color: #000;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
