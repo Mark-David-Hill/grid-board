@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { GridBoard, CellTemplate } from "./GridBoard";
 import { initializeGridData, updatedBoardCell } from "../../utils/gridUtils";
+import "../../styles/components/checkers.scss";
 
 const CheckersBoard = () => {
   const gridSize = 8;

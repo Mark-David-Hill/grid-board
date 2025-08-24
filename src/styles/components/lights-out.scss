@@ -1,0 +1,16 @@
+// Lights Out Game Styles - more specific selectors to override .game-row div styles
+.game-row div.unlit {
+  background-color: gray !important;
+  font-weight: bold;
+  margin: 1px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.game-row div.lit {
+  background-color: white !important;
+  font-weight: bold;
+  margin: 1px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}

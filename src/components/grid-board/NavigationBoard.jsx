@@ -15,6 +15,7 @@ import {
   highlightPath,
   clearHighlights,
 } from "../../utils/gridUtils";
+import "../../styles/components/navigation.scss";
 
 const GRID_SIZE = 12;
 const MOVE_INTERVAL = 500;

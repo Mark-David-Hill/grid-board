@@ -1,17 +1,12 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 
 const GridCell = ({ cellData, onClick }) => {
+  // Only apply inline styles that don't conflict with game-specific CSS
   let cellStyle = {
-    border: "2px solid #333",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     cursor: "pointer",
-    fontSize: "24px",
-    fontWeight: "bold",
-    margin: "2px",
-    borderRadius: "4px",
-    boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
     transform: cellData.rotation ? `rotate(${cellData.rotation}deg)` : "none",
   };
 

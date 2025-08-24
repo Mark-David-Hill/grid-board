@@ -10,6 +10,7 @@ import {
   checkColWin,
   checkDiagonalWin,
 } from "../../utils/gridUtils";
+import "../../styles/components/tic-tac-toe.scss";
 
 const TicTacToeBoard = () => {
   const gridSize = 3;

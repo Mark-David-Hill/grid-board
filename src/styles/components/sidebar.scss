@@ -32,6 +32,18 @@
       cursor: pointer;
       transition: all 0.3s ease;
       text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .game-icon {
+        font-size: 1.2rem;
+        flex-shrink: 0;
+      }
+
+      .game-name {
+        flex: 1;
+      }
 
       &:hover {
         background-color: #007bff;

@@ -13,6 +13,7 @@ import {
   wrapPosition,
   generateRandomObstacles,
 } from "../../utils/gridUtils";
+import "../../styles/components/snake.scss";
 
 const GRID_SIZE = 12;
 const OBSTACLE_COUNT = 8;

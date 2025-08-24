@@ -9,6 +9,7 @@ import {
   updatedBoardCell,
   generateRandomCoordinates,
 } from "../../utils/gridUtils";
+import "../../styles/components/lights-out.scss";
 
 const LightsOutBoard = () => {
   const initialGridData = initializeGridData(5, 5, new CellTemplate("", "lit"));
